@@ -131,7 +131,7 @@ header{
     }
     70%, 100% {
         opacity: 1;
-        background-image: url(../img/rottweiler-1785760_1280.jpg) ;
+        background-image: url(./img/rottweiler-1785760_1280.jpg) ;
   
     }
 }
@@ -456,7 +456,7 @@ label{
 }
 
 footer{
-    background-image:url(../img/footer.jpg);
+    background-image:url(./img/footer.jpg);
     background-repeat: repeat-x;
 }
 
