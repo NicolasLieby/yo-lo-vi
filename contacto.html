@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo lo ví</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport"
+        content="width-device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div>
+    
+        <nav class="navbar">
+            <div class="logoPrincipal">
+                <a href="#">
+                    <img class="logoPrincipal" src="img/feliz.png" alt="Logo Yo lo vi!">
+                </a>
+            </div>
+            <ul class="navlist">
+                <li class="list-item"><a href="./index.html" class="nav-enlace">INICIO</a></li>
+                <li class="list-item"><a href=#SobreNosotros class="nav-enlace">SOBRE YO LO VI</a></li>
+                <li class="list-item"><a href="./contacto.html" class="nav-enlace">CONTACTO</a></li>
+                <li class="list-item"><a href="#" class="nav-enlace">PUBLICAR</a></li>
+                <li class="list-item"><a href="#" class="nav-enlace">REGISTRARSE</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+
+
+
+    <main>
+
+
+        <div class="banner"></div>
+
+        <section>
+            <h1 class="titulo">CONTACTANOS!</h1>
+        </section>
+
+
+        <section class="pant" id="contacto">
+            <div class="centralizar-formulario">
+                <h1 class="subtitulo-dos">FORMULARIO</h1>
+                <form>
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required
+                        placeholder="email@dominio.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="email"
+                                id="radio-email">Email</label>
+
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                                id="radio-telefono">Teléfono</label>
+
+
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                                id="radio-whatsapp" checked>WhatsApp</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                    </fieldset>
+
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades sobre nuevas
+                        adopciones?</label>
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo de Yo lo vi">
+                    </a>
+                </figure>
+            </div>
+            <div class="box" id="SobreNosotros">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>SEGUINOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Nicolás Lieby</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>

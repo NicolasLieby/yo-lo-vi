@@ -1,0 +1,540 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*width: 100%;*/
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+    background-color: rgb(141, 145, 158);
+    text-align: center;
+}
+
+h1{
+    margin:0;
+}
+
+/*
+.caja{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.caja .logo{
+    scale: 0.2;
+    display: inline-block;
+    justify-content: left;
+}
+*/
+.navbar{
+    background-color:  #3b5977;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    box-shadow: 1px 1px 5px #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.logoPrincipal{
+    height: 100px;
+    text-align: center;
+}
+
+.isoLogo{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+.navlist{
+    list-style-type: none;
+}
+
+.navlist .list-item{
+    display: inline-block;
+    padding:20px 10px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+/*
+.nav-enlace{
+    display: inline-block;
+    background:rgb(255, 255, 255);
+    color: black;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rgb(242, 242, 36);
+}
+*/
+
+header{
+        /*width: 100%;*/
+        box-shadow: 1px 1px 5px #000;
+        position: fixed;
+}
+
+
+.banner{
+    margin-top: 20px;
+    width: 100%;
+    height: 1000px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner {
+    0%, 30% {
+        background-image: url(../imagenes/carrusel\ 1.jpg) ;
+        opacity: 1;
+    }
+    31%, 34% {
+        opacity: 0.1;
+    }
+    35%, 65% {
+        background-image: url(../imagenes/fondo.jpg) ;
+        opacity: 1;
+    }
+    66%, 69% {
+        opacity: 0.1;
+    }
+    70%, 100% {
+        opacity: 1;
+        background-image: url(../imagenes/rottweiler-1785760_1280.jpg) ;
+  
+    }
+}
+
+
+main{
+    width: auto;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 180px;
+    color: ivory;
+    /*margin-top:50px;*/
+    font-weight: 100;
+    font-family:'Bebas Neue', cursive;
+}
+
+.subtitulo{
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: ivory;
+    font-weight: 100;
+    margin-top: -50px;
+    display: inline-block;
+    
+}
+
+.subtitulo-dos{
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: ivory;
+    font-weight: 100;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: -60px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px ;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;
+    margin:auto;
+    margin-top: 60px;
+    z-index: 0;
+    
+}
+
+.contenedor li{
+    width: 30%;
+    height: 600px;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); 
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #3b5977;
+}
+
+.contenedor li:hover{
+    transform: translateY(-50px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.5);
+}
+
+.contenedor li img{
+    width: 80%;
+}
+
+.contenedor li h4{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.contenedor li p{
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.contenedor li a{
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logoCard{
+    padding: 10% ;
+}
+
+.boton{
+    padding: 2.5rem 7rem;
+    cursor:pointer;
+    position:relative;
+    border-radius:.5rem;
+    overflow:hidden;
+}
+
+.boton::before{
+    content:'CONTACTAR';
+    position: absolute;
+    margin-top: 5vh;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    /*text-shadow: .1rem .1rem .1rem black;*/
+    transition: .6s ease;
+    padding:10px;
+}
+
+.boton::after{
+    content:'AHORA!';
+    position: absolute;
+    margin-top: 5vh;
+    top: 80%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(247, 222, 33);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+   /* text-shadow: .1rem .1rem .1rem black;*/
+    transition: .8s ease;
+    opacity: 0;
+    padding:20px;
+}
+
+.boton:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity:0;
+}
+
+.boton:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    opacity:1;
+}
+
+/*
+.boton2{
+    padding: 2.5rem 7rem;
+    cursor:pointer;
+    position:relative;
+    border-radius:.3rem;
+    overflow:hidden;
+}
+
+.boton2::before{
+    content:'ALERTAR';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem black;
+    transition: .4s ease;
+}
+
+.boton2::after{
+    content:'AHORA!';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(247, 222, 33);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem black;
+    transition: .8s ease;
+    opacity: 0;
+}
+
+.boton2:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity:0;
+}
+
+.boton2:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    opacity:1;
+}
+
+
+.boton3{
+    padding: 2.5rem 7rem;
+    cursor:pointer;
+    position:relative;
+    border-radius:.3rem;
+    overflow:hidden;
+}
+
+.boton3::before{
+    content:'CONTACTAR';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem black;
+    transition: .4s ease;
+}
+
+.boton3::after{
+    content:'AHORA!';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-size: 1.6rem;
+    color:rgb(247, 222, 33);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem black;
+    transition: .8s ease;
+    opacity: 0;
+}
+
+.boton3:hover::before{
+    transform: translate(-50%,-50%) scale(3);
+    opacity:0;
+}
+
+.boton3:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    opacity:1;
+}
+*/
+
+.mapaContenido{
+    margin:30vh;
+    margin-bottom: 15vh;
+    text-align: center;
+    justify-content: center;
+    border-radius:30px;
+}
+
+
+.pant{
+    width:940px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+form{
+    margin: 100px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+form label, form legend{
+    display:block;
+    font-size: 20px;
+    margin:0 0 10px;
+    text-align: left;
+    justify-content: left;
+}
+
+label{
+    display:block;
+    font-size: 20px;
+    margin:0 0 10px;
+
+}
+
+.input-padron{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width:100%;
+    justify-content: center;
+}
+
+.centralizar-formulario{
+    justify-content: center;
+    display: inline-block;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width:40%;
+    padding:15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background:rgb(129, 120, 163);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background:rgb(40, 125, 194);
+    transform: scale(1.2);
+}
+
+footer{
+    background-image:url(../imagenes/footer.jpg);
+    background-repeat: repeat-x;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family:'Bebas Neue', cursive;
+    
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color:  #3b5977;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
