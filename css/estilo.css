@@ -116,14 +116,14 @@ header{
 
 @keyframes banner {
     0%, 30% {
-        background-image: url(./img/carrusel\ 1.jpg) ;
+        background-image: url(../../img/carrusel\ 1.jpg) ;
         opacity: 1;
     }
     31%, 34% {
         opacity: 0.1;
     }
     35%, 65% {
-        background-image: url(./img/fondo.jpg) ;
+        background-image: url(../../img/fondo.jpg) ;
         opacity: 1;
     }
     66%, 69% {
@@ -131,7 +131,7 @@ header{
     }
     70%, 100% {
         opacity: 1;
-        background-image: url(./img/rottweiler-1785760_1280.jpg) ;
+        background-image: url(../../img/rottweiler-1785760_1280.jpg) ;
   
     }
 }
@@ -456,7 +456,7 @@ label{
 }
 
 footer{
-    background-image:url(./img/footer.jpg);
+    background-image:url(../../img/footer.jpg);
     background-repeat: repeat-x;
 }
 
